@@ -62,7 +62,6 @@
         </dependency>
         
         
-        <!-- INÍCIO: Dependências para QR Code (ZXing) -->
         <dependency>
             <groupId>com.google.zxing</groupId>
             <artifactId>core</artifactId>
@@ -73,13 +72,17 @@
             <artifactId>javase</artifactId>
             <version>3.5.3</version>
         </dependency>
-        <!-- FIM: Dependências para QR Code -->
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itext7-core</artifactId>
+            <version>7.2.6</version>
+            <type>pom</type>
+        </dependency>
     </dependencies>
     
     <build>
         <defaultGoal>spring-boot:run</defaultGoal>
         <plugins>
-            <!-- Corrigido para Java 17 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -119,7 +122,6 @@
             <id>production</id>
             <dependencies>
                 <dependency>
-                    <!-- Exclude development dependencies from production -->
                     <groupId>com.vaadin</groupId>
                     <artifactId>vaadin-core</artifactId>
                     <exclusions>
@@ -161,6 +163,11 @@
         <repository>
             <id>vaadin-directory</id>
             <url>https://maven.vaadin.com/vaadin-addons</url>
+        </repository>
+                <repository>
+            <id>itext</id>
+            <name>iText Repository</name>
+            <url>https://repo.itextsupport.com/releases</url>
         </repository>
     </repositories>
 </project>
