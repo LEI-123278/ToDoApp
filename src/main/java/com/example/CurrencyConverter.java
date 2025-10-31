@@ -1,4 +1,4 @@
-package com.example.todoapp.service;
+package com.example;
 
 import javax.money.Monetary;
 import javax.money.MonetaryAmount;
