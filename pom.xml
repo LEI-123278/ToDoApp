@@ -10,6 +10,7 @@
     <properties>
         <java.version>21</java.version>
         <vaadin.version>24.9.4</vaadin.version>
+        <sonar.host.url>http://localhost:9000</sonar.host.url>
     </properties>
     
     <parent>
@@ -73,6 +74,11 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+            <groupId>org.sonarsource.scanner</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>3.11.0.3922</version> 
             </plugin>
         </plugins>
     </build>
