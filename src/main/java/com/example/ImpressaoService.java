@@ -17,9 +17,9 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 
 @Route("pdf")
-public class PdfView extends VerticalLayout {
+public class ImpressaoService extends VerticalLayout {
 
-    public PdfView() {
+    public ImpressaoService() {
         TextField titulo = new TextField("Título do PDF");
         TextArea conteudo = new TextArea("Conteúdo do PDF");
         conteudo.setHeight("150px");
