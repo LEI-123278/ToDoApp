@@ -52,6 +52,15 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+               <!-- Nova dependência: Câmbio de moedas -->
+        <dependency>
+            <groupId>org.javamoney</groupId>
+            <artifactId>moneta</artifactId>
+            <version>1.4.5</version>
+            <type>pom</type>
+        </dependency>
+        
         
         <!-- INÍCIO: Dependências para QR Code (ZXing) -->
         <dependency>
