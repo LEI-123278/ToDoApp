@@ -65,6 +65,11 @@
             <version>3.5.3</version>
         </dependency>
         <!-- FIM: Dependências para QR Code -->
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itext7-core</artifactId>
+            <version>7.2.6</version>
+        </dependency>
     </dependencies>
     
     <build>
