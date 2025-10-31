@@ -1,4 +1,4 @@
-package com.example.todoapp.views;
+package com.example;
 
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
